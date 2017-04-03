@@ -5,13 +5,13 @@ from primes_generator import prime_function
 
 class TestPrime(TestCase):
     def test_it_does_not_accept_strings(self):
-        with self.assertRaises(ValueError) as context:
+        with self.assertRaises(TypeError) as context:
             prime_function("30")
             self.assertEqual("The provided input is not an integer!", context.exception.message,
                              "Invalid input of type str is not allowed")
 
     def test_the_output_is_correct(self):
-        self.assertEqual(prime_function(30), [1, 2, 3, 5, 7, 11, 13, 17, 19, 23, 29])
+        self.assertEqual(prime_function(30), [2, 3, 5, 7, 11, 13, 17, 19, 23, 29])
 
     def test_it_does_not_accept_zero_as_input(self):
         n = prime_function(0)
@@ -23,3 +23,7 @@ class TestPrime(TestCase):
     def test_it_does_not_accept_negatives_as_input(self):
         n = prime_function(-20)
         self.assertEqual(n, 'Invalid input', msg='the input should be an integer greater than zero')
+
+    def test_it_does_not_accept_one_as_input(self):
+        n = prime_function(1)
+        self.assertEqual(n, 'Invalid input', msg='Prime numbers are greater than one')
