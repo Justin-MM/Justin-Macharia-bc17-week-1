@@ -6,10 +6,10 @@ class Cups (object):
     self.make = make
 
 # class Mugs inherits from Cups
-class Mugs (Mugs):
+class Mugs (Cups):
 
   def __init__ (self, color, size, make):
-    super (ChinaMugs, self).__init__(color, size, make)
+    super (Mugs, self).__init__(color, size, make)
 
   def purchase_mug(self, make):
     if self.make == 'China Mugs':
@@ -39,7 +39,7 @@ class Mugs (Mugs):
 inventory = Cups ('Black', "Big", 'new')
 purchase_Mug = Mugs ('black', "Big", 'China Mugs')
 
-print (inventory)
-print (purchase_Mug)
+
+print (purchase_Mug.purchase_mug("China Mug"))
 
 __author__ = 'Justin M'
