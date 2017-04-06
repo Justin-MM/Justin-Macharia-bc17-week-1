@@ -1,18 +1,19 @@
-ul {
+#myTopnav {
     list-style-type: none;
-    margin: 0;
+    margin: 1%;
     padding: 0;
     overflow: hidden;
     float: right;
 	text-decoration: none;
 }
 
-li {
+#list {
     float: left;
 	text-decoration: none;
+	list-style: none;
 }
 
-li a {
+#specific {
     display: block;
     padding: 8px;
     background-color: none;
@@ -22,9 +23,21 @@ li a {
 	font-size : 14px;
 	margin-top : 10%;
 }
+#specific:hover{
+	text-decoration: underline;
+}
+#footy:hover{
+	text-decoration: underline;
+}
+#footey:hover{
+	text-decoration: underline;
+}
 li a button{
 	display: inline-block;
 	margin-top : -20%;
+}
+#input_button:hover{
+	background-color: #e7e7e7;
 }
 #image {  
    width : 50%; 
@@ -48,6 +61,7 @@ li a button{
   flex: 1; 
   margin-left: 25%;
   width: 10px;
+  
 }
 input[type=submit] {
     background-color: none;
@@ -98,5 +112,46 @@ input[type=text] {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+	
+}
+#footer{
+	text-decoration: none;
+	display: inline-block;
+	position: absolute;
+	background-color: #eff1f2;
+    bottom: 0px;
+    width: 99%;
+	list-style: none;
+	
+}
+#footy {
+	display: block;
+    padding: 8px;
+	text-decoration: none;
+	color : black;
+	font-family : "Times New Roman", serif;
+	font-size : 14px;
+	width: auto;
+	
+}
+#footerdiv {
+	width: auto;
+	background-color: gray;
+	
+}
+
+#listy {
+    float: right;
+	text-decoration: none;
+	list-style: none;
+}
+#footey {
+	display: block;
+    padding: 8px;
+    background-color: none;
+	text-decoration: none;
+	color : black;
+	font-family : "Times New Roman", serif;
+	font-size : 14px;
 	
 }
