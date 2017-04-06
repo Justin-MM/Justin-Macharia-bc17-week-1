@@ -17,8 +17,15 @@ li a {
     padding: 8px;
     background-color: none;
 	text-decoration: none;
+	color : black;
+	font-family : "Times New Roman", serif;
+	font-size : 14px;
+	margin-top : 10%;
 }
-
+li a button{
+	display: inline-block;
+	margin-top : -20%;
+}
 #image {  
    width : 50%; 
    height: 10em;             
@@ -77,9 +84,19 @@ input[type=text] {
     padding: 10px 26px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
+    display: inline;
     font-size: 12px;
     margin: 4px 2px;
     cursor: pointer;
+	}
+#sign {
+	background-color: #4286f4; 
+    border: none;
+    color: white;
+    padding: 9px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 	
 }
