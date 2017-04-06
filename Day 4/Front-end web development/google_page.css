@@ -39,12 +39,23 @@ li a {
 }
 #container > div {
   flex: 1; 
-  margin-left: 15%
+  margin-left: 25%;
+  width: 10px;
+}
+input[type=submit] {
+    background-color: none;
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
 }
 
 input[type=text] {
-    width: 140%;
-	padding: 12px 20px;
+    width: 160%;
+	height: 100%;
+	padding: 12px 20px 20px 12px;
     margin: 8px 0;
     box-sizing: border-box;
 }
@@ -58,7 +69,7 @@ input[type=text] {
 }
 #input { height:20px; margin:0; padding-left: 30px; }
 
-#input_img { position:absolute; bottom:8px; left:400px; width:10px; height:20px; }
+#input_img { position:absolute; bottom:8px; left:450px; width:10px; height:20px; }
 .button {
     background-color: none;
     border: none;
